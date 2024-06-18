@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.1" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\Carro\Carro.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Motorista\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Motorista\Motorista.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Motorista\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Motorista\Delete.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Motorista\Details.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Motorista\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Marca\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Marca\Delete.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Marca\Details.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Marca\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Marca\Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Motorista\Create.cshtml" />
+    <UpToDateCheckInput Remove="Views\Motorista\Delete.cshtml" />
+    <UpToDateCheckInput Remove="Views\Motorista\Details.cshtml" />
+    <UpToDateCheckInput Remove="Views\Motorista\Edit.cshtml" />
+    <UpToDateCheckInput Remove="Views\Motorista\Index.cshtml" />
+  </ItemGroup>
+
+</Project>
