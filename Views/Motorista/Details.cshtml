@@ -1,8 +1,8 @@
 @model Aluguel.Models.Motorista
 
 @{
-    ViewData["Title"] = "Details";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+ViewData["Title"] = "Details";
+Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h1>Details</h1>
@@ -11,23 +11,41 @@
     <h4>Motorista</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Nome)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Nome)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.DataNascimento)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.DataNascimento)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Endereco)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Endereco)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Carro.Modelo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Carro.Modelo)
+        </dd>
+        <dt class="col-sm-2">
+            Ano do Carro
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Carro.Ano)
+        </dd>
+        <dt class="col-sm-2">
+            Marca do Carro
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Carro.Marca.Nome)
         </dd>
     </dl>
 </div>

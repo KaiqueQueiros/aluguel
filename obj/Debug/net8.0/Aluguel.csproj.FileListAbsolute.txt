@@ -267,3 +267,4 @@ C:\Users\Kaique Queiros\Documents\Favan\Aluguel\obj\Debug\net8.0\refint\Aluguel.
 C:\Users\Kaique Queiros\Documents\Favan\Aluguel\obj\Debug\net8.0\Aluguel.pdb
 C:\Users\Kaique Queiros\Documents\Favan\Aluguel\obj\Debug\net8.0\Aluguel.genruntimeconfig.cache
 C:\Users\Kaique Queiros\Documents\Favan\Aluguel\obj\Debug\net8.0\ref\Aluguel.dll
+C:\Users\Kaique Queiros\Documents\Favan\Aluguel\obj\Debug\net8.0\Aluguel.sourcelink.json

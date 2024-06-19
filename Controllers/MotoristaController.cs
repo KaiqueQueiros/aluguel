@@ -1,9 +1,5 @@
 #nullable disable
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -24,7 +20,11 @@ namespace Aluguel.Controllers
         // GET: Motorista
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Motorista.ToListAsync());
+            var motoristas = await _context.Motorista
+                .Include(m => m.Carro)
+                .ThenInclude(c => c.Marca)
+                .ToListAsync();
+            return View(motoristas);
         }
 
         // GET: Motorista/Details/5
@@ -36,6 +36,8 @@ namespace Aluguel.Controllers
             }
 
             var motorista = await _context.Motorista
+                .Include(m => m.Carro)
+                .ThenInclude(c => c.Marca) // Inclui a marca do carro
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (motorista == null)
             {
